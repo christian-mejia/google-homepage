@@ -1,64 +1,214 @@
-body {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+a {
+    text-decoration: none;
+    color: rgba(0,0,0, 0.7);
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
 }
 
-ul {
-    list-style-type: none;
+/* Underline links on hover */
+a:hover {
+    text-decoration: underline;
+}
+
+.top-left {
+    padding: 15px 2px 0 19px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.top-right {
+    padding: 15px 0 0 17px;
+    float: right;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    top: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+}
+
+main {
+    overflow: visible;
+    max-width: none;
+    margin: 0 auto;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 900px;
+    background: #f0f0f0;
+    border-top: 1px solid #e0e0e0;
+    line-height: 40px;
+    color: #5F6368;
+}
+
+footer > div {
+    padding-left: 30px;
+}
+
+.search {
+    overflow: visible;
+    max-width: none;
+    margin: 0 auto;
+}
+
+.search-form {
+    margin: 0 auto;
+    position: relative;
+    padding-top: 6px;
+    padding-left: 12px;
+}
+
+.bottom-left {
+    padding: 0 27px 0 0;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.bottom-right {
+    padding: 0 28px 0 0;
+    float: right;
+    text-align: center;
+    position: relative;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 15px;
+    margin-bottom: 300px;
+}
+
+.search-form-inner {
+    background: #fff;
+    display: flex;
+    border: 1px solid #e3e5e7;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: auto;
+    width: 454px;
+}
+
+.search-bar-container {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 20px;
+}
+
+.search-bar-box {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.search-text{
+    flex: 100%;
+}
+
+.microphone {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
+    flex-direction: row;
+}
+    
+.microphone-inner {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 6px;
+    width: 24px;
+    line-height: 44px;
+}
+.microphone-inner-image {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg) 0 0 no-repeat;
+    height: 20px;
+    width: 20px;
+    background-size: 14px;
+    vertical-align: middle;
+}
+
+.search-button {
+    border-radius: 3px;
+    color: rgb(100, 100, 100);
+    background-color: rgba(225, 225, 225, .5);
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    height: 36px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.search-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(225, 225, 225, .7);
+    border: solid 1px rgb(170, 170, 170);
+}
+
+#sign-in {
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    padding: 8px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 8px 19px 0 20px;
+}
+
+#grid {
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+    opacity: .55;
+}
+
+#search-bar {
+    font: 16px arial,sans-serif;
+    background-color: transparent;
+    border: none;
     margin: 0;
     padding: 0;
-    text-align: left;
-}
-
-li {
-    display: inline;
-    padding: 10px;
-    text-align: left;
-}
-
-.rightnav{
-    display: inline;
-    padding: 10px;
-    text-align: right;
-}
-
-.googlelogo {
-    padding-top: 150px;
-}
-
-form {
-    display: inline-block;
-    padding: 20px;
-    overflow: auto;
-}
-
-.searchbar {
-    width: 500px;
-    border-radius: 24px;
-    height: 30px;
-}
-
-.navbar {
-    background-color: #f0f0f0;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
     width: 100%;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .navbar a {
-    float: left;
-    display: block;
-    color: black;
+    line-height: 34px;
+    color: rgba(0,0,0,.87);
+}
+
+#google-logo {
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 12px;
-  }
-  
-  /* Change the color of links on hover */
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
+    display: block;
+    margin: auto;
+    clear: both;
+    padding-top: 151px;
+    padding-bottom: 21px;
+}

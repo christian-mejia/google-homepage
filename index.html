@@ -2,39 +2,63 @@
 
 <html>
     <head>
+        <link rel="shortcut icon" href="./images/google-favicon.png"/>
         <title>Google</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     
     <body>
-        <div>
-            <ul>
-                <li>About</li>
-                <li>Store</li>
-            </ul>
-        </div>
+        <header>
+            <div>
+                <a class="top-left" href="#about">About</a>
+                <a class="top-left" href="#store">Store</a>
 
-        <div class = "googlelogo">
-            <img alt="Google" height ="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-        </div>
-        
-        <div>
-            <form>
-                <section>
-                    <input class = "searchbar" maxlength="2048" type="search">
-                </section>
+                <a class="top-right" href="#sign-in"id="sign-in" >Sign In</a>
+                <a class="top-right" href="#grid"><img id="grid" src="./images/grid.png"></a>
+                <a class="top-right" href="#images">Images</a>
+                <a class="top-right" href="#gmail">Gmail</a>
+            </div>
+        </header>
 
-                <section>
-                    <input class="submit" type="submit">
-                </section>
-            </form>
-        </div>
+        <main>
+            <img alt="Google" height ="92" src="./images/google-logo.png" name="google-logo" id="google-logo">
+            <div class="search">
+                <form>
+                    <div class="search-form">
+                        <div class="search-form-inner">
+                            <div class="search-bar-container">
+                                <div class="search-bar-box">
+                                    <div class="search-text">
+                                        <input id="search-bar" type="text" maxlength="2048" name="searchbar" title="Search">
+                                    </div>
+                                </div>
+                                <div class="microphone">
+                                    <div class="microphone-inner">
+                                        <div class="microphone-inner-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="search-buttons">
+                <input type="submit" class="search-button" name="google-search" id="google-search" value="Google Search">
+                <input type="submit" class="search-button" name="feeling-lucky" id="feeling-lucky" value="I'm Feeling Lucky">
+            </div>
+        </main>
 
         <footer>
-            <div class="navbar">
-                <a href="#advertising" class="active">Advertising</a>
-                <a href="#business">Business</a>
-                <a href="#howsearchworks">How Search Works</a>
+            <div>
+                <a class="bottom-left" href="#advertising" class="active">Advertising</a>
+                <a class="bottom-left" href="#business">Business</a>
+                <a class="bottom-left" href="#howsearchworks">How Search Works</a>
+                
+                <a class="bottom-right" href="#settings">Settings</a>
+                <a class="bottom-right" href="#terms">Terms</a>
+                <a class="bottom-right" href="#privacy">Privacy</a>
             </div>
         </footer>  
     </body>
